@@ -1,0 +1,209 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:customer_name",
+ "creation": "2022-02-15 21:45:48.520591",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_id",
+  "category",
+  "customer_name",
+  "address",
+  "address_2",
+  "city",
+  "phone",
+  "fax",
+  "email",
+  "web_url",
+  "contact",
+  "cell_no",
+  "position",
+  "date",
+  "status",
+  "vat_no",
+  "fp_zone_1",
+  "fp_zone_2",
+  "fp_zone_3",
+  "freeport_cert_no",
+  "expiry",
+  "storage_permit",
+  "brn",
+  "total_area_leased",
+  "product_type",
+  "description_of_activities",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Customer ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Select",
+   "label": "Category",
+   "options": "\nInterne\nEtranger"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "address_2",
+   "fieldtype": "Data",
+   "label": "Address 2"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Int",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "fax",
+   "fieldtype": "Int",
+   "label": "Fax"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "EMail"
+  },
+  {
+   "fieldname": "web_url",
+   "fieldtype": "Data",
+   "label": "Web URL"
+  },
+  {
+   "fieldname": "contact",
+   "fieldtype": "Data",
+   "label": "Contact"
+  },
+  {
+   "fieldname": "cell_no",
+   "fieldtype": "Data",
+   "label": "Cell No"
+  },
+  {
+   "fieldname": "position",
+   "fieldtype": "Data",
+   "label": "Position"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nEnable\nDisable"
+  },
+  {
+   "fieldname": "vat_no",
+   "fieldtype": "Int",
+   "label": "VAT No"
+  },
+  {
+   "default": "0",
+   "fieldname": "fp_zone_1",
+   "fieldtype": "Check",
+   "label": "FP Zone 1"
+  },
+  {
+   "default": "0",
+   "fieldname": "fp_zone_2",
+   "fieldtype": "Check",
+   "label": "FP Zone 2"
+  },
+  {
+   "default": "0",
+   "fieldname": "fp_zone_3",
+   "fieldtype": "Check",
+   "label": "FP Zone 3"
+  },
+  {
+   "fieldname": "freeport_cert_no",
+   "fieldtype": "Int",
+   "label": "Freeport Cert No"
+  },
+  {
+   "fieldname": "expiry",
+   "fieldtype": "Date",
+   "label": "Expiry"
+  },
+  {
+   "fieldname": "storage_permit",
+   "fieldtype": "Int",
+   "label": "Storage Permit"
+  },
+  {
+   "fieldname": "brn",
+   "fieldtype": "Data",
+   "label": "BRN"
+  },
+  {
+   "fieldname": "total_area_leased",
+   "fieldtype": "Int",
+   "label": "Total Area Leased"
+  },
+  {
+   "fieldname": "product_type",
+   "fieldtype": "Data",
+   "label": "Product Type"
+  },
+  {
+   "fieldname": "description_of_activities",
+   "fieldtype": "Text",
+   "label": "Description of Activities"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Text",
+   "label": "Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-02-15 21:45:48.520591",
+ "modified_by": "Administrator",
+ "module": "Warehouse Management System",
+ "name": "Customer WMS",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

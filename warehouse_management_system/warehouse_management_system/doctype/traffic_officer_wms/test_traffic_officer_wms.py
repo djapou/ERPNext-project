@@ -4,5 +4,5 @@
 # import frappe
 import unittest
 
-class TestTrafficOfficersWMS(unittest.TestCase):
+class TestTrafficOfficerWMS(unittest.TestCase):
 	pass

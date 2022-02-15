@@ -1,0 +1,76 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "REG/CPC-CODE-.#####",
+ "creation": "2022-02-15 20:26:20.123197",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "cpc_code",
+  "regime",
+  "category",
+  "cpc_description",
+  "type"
+ ],
+ "fields": [
+  {
+   "fieldname": "cpc_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "CPC Code",
+   "unique": 1
+  },
+  {
+   "fieldname": "regime",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Regime",
+   "unique": 1
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Category"
+  },
+  {
+   "fieldname": "cpc_description",
+   "fieldtype": "Data",
+   "label": "CPC Description"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Type",
+   "options": "\nOut\nInt"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-02-15 20:45:20.454000",
+ "modified_by": "Administrator",
+ "module": "Warehouse Management System",
+ "name": "Regime WMS",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -4,5 +4,5 @@
 # import frappe
 from frappe.model.document import Document
 
-class ActivityWMS(Document):
+class CountryWMS(Document):
 	pass

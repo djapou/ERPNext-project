@@ -1,30 +1,44 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:activity",
- "creation": "2022-02-15 11:26:52.892996",
+ "autoname": "field:country_name",
+ "creation": "2022-02-15 13:49:50.595441",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "activity"
+  "country_code",
+  "country_name",
+  "currency"
  ],
  "fields": [
   {
-   "fieldname": "activity",
+   "fieldname": "country_code",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Activity",
-   "reqd": 1,
+   "label": "Country Code",
    "unique": 1
+  },
+  {
+   "fieldname": "country_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Currency"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-15 11:26:52.892996",
+ "modified": "2022-02-15 16:42:47.708245",
  "modified_by": "Administrator",
  "module": "Warehouse Management System",
- "name": "Activity WMS",
+ "name": "Country WMS",
  "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [

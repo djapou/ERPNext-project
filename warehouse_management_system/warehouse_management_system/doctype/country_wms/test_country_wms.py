@@ -4,5 +4,5 @@
 # import frappe
 import unittest
 
-class TestActivityWMS(unittest.TestCase):
+class TestCountryWMS(unittest.TestCase):
 	pass

@@ -13,12 +13,17 @@
   {
    "fieldname": "traffic_officer_name",
    "fieldtype": "Data",
-   "label": "Traffic Officer Name"
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Traffic Officer Name",
+   "reqd": 1,
+   "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-15 17:12:40.096093",
+ "modified": "2022-02-16 11:34:25.772031",
  "modified_by": "Administrator",
  "module": "Warehouse Management System",
  "name": "Traffic Officer WMS",

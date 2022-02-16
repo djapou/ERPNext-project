@@ -10,13 +10,14 @@
   "location_code",
   "zone_code",
   "aisle",
-  "rack_code",
   "bay",
+  "on_hold",
+  "putaway",
+  "picking",
   "max_pallet_ratio",
   "side",
-  "level",
-  "putaway",
-  "picking"
+  "rack_code",
+  "level"
  ],
  "fields": [
   {
@@ -37,6 +38,7 @@
   {
    "fieldname": "aisle",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Aisle"
   },
   {
@@ -48,39 +50,50 @@
   {
    "fieldname": "bay",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Bay"
   },
   {
    "fieldname": "max_pallet_ratio",
    "fieldtype": "Int",
+   "in_list_view": 1,
    "label": "Max Pallet Ratio"
   },
   {
    "fieldname": "side",
    "fieldtype": "Data",
-   "label": "Side"
+   "label": "Side",
+   "read_only": 1
   },
   {
    "fieldname": "level",
    "fieldtype": "Int",
+   "in_list_view": 1,
    "label": "Level"
   },
   {
    "default": "0",
    "fieldname": "putaway",
    "fieldtype": "Check",
+   "in_list_view": 1,
    "label": "Putaway"
   },
   {
    "default": "0",
    "fieldname": "picking",
    "fieldtype": "Check",
+   "in_list_view": 1,
    "label": "Picking"
+  },
+  {
+   "fieldname": "on_hold",
+   "fieldtype": "Column Break",
+   "label": "On Hold"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-15 22:32:17.634991",
+ "modified": "2022-02-16 12:47:22.752267",
  "modified_by": "Administrator",
  "module": "Warehouse Management System",
  "name": "Location WMS",

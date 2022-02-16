@@ -10,8 +10,9 @@
   "product_code",
   "hs_code",
   "unit",
-  "description",
   "expiry_date",
+  "description",
+  "column_break_3",
   "remarks"
  ],
  "fields": [
@@ -28,7 +29,8 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "HS Code",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "unit",
@@ -40,25 +42,30 @@
   },
   {
    "fieldname": "description",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Description"
   },
   {
    "fieldname": "expiry_date",
    "fieldtype": "Date",
    "in_list_view": 1,
-   "label": "Expiry Date",
-   "reqd": 1
+   "label": "Expiry Date"
   },
   {
    "fieldname": "remarks",
    "fieldtype": "Text",
+   "in_list_view": 1,
    "label": "Remarks"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-15 17:51:21.447168",
+ "modified": "2022-02-16 12:11:26.516061",
  "modified_by": "Administrator",
  "module": "Warehouse Management System",
  "name": "Product WMS",

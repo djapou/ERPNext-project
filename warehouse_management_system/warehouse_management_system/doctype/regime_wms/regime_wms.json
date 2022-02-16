@@ -10,6 +10,7 @@
   "cpc_code",
   "regime",
   "category",
+  "column_break_4",
   "cpc_description",
   "type"
  ],
@@ -19,6 +20,7 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "CPC Code",
+   "reqd": 1,
    "unique": 1
   },
   {
@@ -26,6 +28,7 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Regime",
+   "reqd": 1,
    "unique": 1
   },
   {
@@ -45,11 +48,15 @@
    "in_list_view": 1,
    "label": "Type",
    "options": "\nOut\nInt"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-15 20:45:20.454000",
+ "modified": "2022-02-16 12:19:02.896195",
  "modified_by": "Administrator",
  "module": "Warehouse Management System",
  "name": "Regime WMS",

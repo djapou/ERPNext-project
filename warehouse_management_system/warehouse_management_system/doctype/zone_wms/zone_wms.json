@@ -11,6 +11,7 @@
   "zone_code",
   "description",
   "customer_id",
+  "column_break_6",
   "chargemonth",
   "start_date",
   "end_date",
@@ -24,7 +25,8 @@
    "in_list_view": 1,
    "label": "W House Code",
    "options": "Warehouse WMS",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "zone_code",
@@ -37,45 +39,56 @@
   {
    "fieldname": "description",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Description"
   },
   {
    "fieldname": "customer_id",
    "fieldtype": "Link",
    "label": "Customer ID",
-   "options": "Customer WMS"
+   "options": "Customer WMS",
+   "reqd": 1
   },
   {
    "fieldname": "chargemonth",
    "fieldtype": "Duration",
+   "in_list_view": 1,
    "label": "Charge/Month"
   },
   {
    "fieldname": "start_date",
    "fieldtype": "Date",
+   "in_list_view": 1,
    "label": "Start Date"
   },
   {
    "fieldname": "end_date",
    "fieldtype": "Date",
+   "in_list_view": 1,
    "label": "End Date"
   },
   {
    "default": "0",
    "fieldname": "ok_to_bill",
    "fieldtype": "Check",
+   "in_list_view": 1,
    "label": "Ok to Bill"
   },
   {
    "default": "0",
    "fieldname": "all_customers",
    "fieldtype": "Check",
+   "in_list_view": 1,
    "label": "All Customers"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-15 22:09:42.838681",
+ "modified": "2022-02-16 12:28:28.945741",
  "modified_by": "Administrator",
  "module": "Warehouse Management System",
  "name": "Zone WMS",

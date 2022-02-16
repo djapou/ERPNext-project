@@ -1,37 +1,39 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:customer_name",
+ "autoname": "CUST-.#####",
  "creation": "2022-02-15 21:45:48.520591",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "customer_id",
-  "category",
   "customer_name",
+  "category",
+  "city",
   "address",
   "address_2",
-  "city",
-  "phone",
-  "fax",
-  "email",
-  "web_url",
   "contact",
-  "cell_no",
+  "email",
   "position",
-  "date",
   "status",
-  "vat_no",
-  "fp_zone_1",
-  "fp_zone_2",
-  "fp_zone_3",
-  "freeport_cert_no",
-  "expiry",
-  "storage_permit",
-  "brn",
-  "total_area_leased",
   "product_type",
+  "total_area_leased",
+  "fp_zone",
+  "zone_1",
+  "zone_2",
+  "zone_3",
+  "phone",
+  "cell_no",
+  "fax",
+  "freeport_cert_no",
+  "vat_no",
+  "web_url",
+  "date",
+  "expiry",
+  "brn",
+  "storage_permit",
+  "section_break_29",
   "description_of_activities",
   "remarks"
  ],
@@ -40,12 +42,16 @@
    "fieldname": "customer_id",
    "fieldtype": "Data",
    "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
    "label": "Customer ID",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "category",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Category",
    "options": "\nInterne\nEtranger"
   },
@@ -58,135 +64,168 @@
   {
    "fieldname": "address",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Address"
   },
   {
    "fieldname": "address_2",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Address 2"
   },
   {
    "fieldname": "city",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "City"
   },
   {
    "fieldname": "phone",
    "fieldtype": "Int",
+   "in_list_view": 1,
    "label": "Phone"
   },
   {
    "fieldname": "fax",
    "fieldtype": "Int",
+   "in_list_view": 1,
    "label": "Fax"
   },
   {
    "fieldname": "email",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "EMail"
   },
   {
    "fieldname": "web_url",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Web URL"
   },
   {
    "fieldname": "contact",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Contact"
   },
   {
    "fieldname": "cell_no",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Cell No"
   },
   {
    "fieldname": "position",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Position"
   },
   {
    "fieldname": "date",
    "fieldtype": "Date",
+   "in_list_view": 1,
    "label": "Date"
   },
   {
    "fieldname": "status",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Status",
    "options": "\nEnable\nDisable"
   },
   {
    "fieldname": "vat_no",
    "fieldtype": "Int",
+   "in_list_view": 1,
    "label": "VAT No"
-  },
-  {
-   "default": "0",
-   "fieldname": "fp_zone_1",
-   "fieldtype": "Check",
-   "label": "FP Zone 1"
-  },
-  {
-   "default": "0",
-   "fieldname": "fp_zone_2",
-   "fieldtype": "Check",
-   "label": "FP Zone 2"
-  },
-  {
-   "default": "0",
-   "fieldname": "fp_zone_3",
-   "fieldtype": "Check",
-   "label": "FP Zone 3"
   },
   {
    "fieldname": "freeport_cert_no",
    "fieldtype": "Int",
+   "in_list_view": 1,
    "label": "Freeport Cert No"
   },
   {
    "fieldname": "expiry",
    "fieldtype": "Date",
+   "in_list_view": 1,
    "label": "Expiry"
   },
   {
    "fieldname": "storage_permit",
    "fieldtype": "Int",
+   "in_list_view": 1,
    "label": "Storage Permit"
   },
   {
    "fieldname": "brn",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "BRN"
   },
   {
    "fieldname": "total_area_leased",
    "fieldtype": "Int",
+   "in_list_view": 1,
    "label": "Total Area Leased"
   },
   {
    "fieldname": "product_type",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Product Type"
   },
   {
    "fieldname": "description_of_activities",
    "fieldtype": "Text",
+   "in_list_view": 1,
    "label": "Description of Activities"
   },
   {
    "fieldname": "remarks",
    "fieldtype": "Text",
+   "in_list_view": 1,
    "label": "Remarks"
+  },
+  {
+   "fieldname": "fp_zone",
+   "fieldtype": "Column Break",
+   "label": "FP Zone"
+  },
+  {
+   "default": "0",
+   "fieldname": "zone_1",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Zone 1"
+  },
+  {
+   "default": "0",
+   "fieldname": "zone_2",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Zone 2"
+  },
+  {
+   "default": "0",
+   "fieldname": "zone_3",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Zone 3"
+  },
+  {
+   "fieldname": "section_break_29",
+   "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-15 21:45:48.520591",
+ "modified": "2022-02-16 15:14:32.153670",
  "modified_by": "Administrator",
  "module": "Warehouse Management System",
  "name": "Customer WMS",
- "naming_rule": "By fieldname",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {

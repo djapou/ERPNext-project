@@ -35,6 +35,7 @@
   "storage_permit",
   "section_break_29",
   "description_of_activities",
+  "column_break_29",
   "remarks"
  ],
  "fields": [
@@ -178,13 +179,13 @@
   },
   {
    "fieldname": "description_of_activities",
-   "fieldtype": "Text",
+   "fieldtype": "Small Text",
    "in_list_view": 1,
    "label": "Description of Activities"
   },
   {
    "fieldname": "remarks",
-   "fieldtype": "Text",
+   "fieldtype": "Small Text",
    "in_list_view": 1,
    "label": "Remarks"
   },
@@ -217,11 +218,15 @@
   {
    "fieldname": "section_break_29",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_29",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-16 15:14:32.153670",
+ "modified": "2022-02-17 17:38:55.964545",
  "modified_by": "Administrator",
  "module": "Warehouse Management System",
  "name": "Customer WMS",

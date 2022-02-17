@@ -1,0 +1,201 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "PTS-.#####",
+ "creation": "2022-02-17 17:04:58.679898",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "fp_zone",
+  "inbound",
+  "customer_id",
+  "billdate",
+  "discrepancy_noted",
+  "no",
+  "yes",
+  "lot_no",
+  "date_in",
+  "section_break_11",
+  "inbound_products",
+  "column_break_13",
+  "status",
+  "section_break_15",
+  "delete_selected_row",
+  "taily_sheet",
+  "product",
+  "column_break_21",
+  "select_product_from_inbound_to_add_to_taily_sheet",
+  "quantity",
+  "pallets",
+  "per_pallet",
+  "p_ratio",
+  "shared"
+ ],
+ "fields": [
+  {
+   "fieldname": "fp_zone",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "FP Zone",
+   "options": "Zone WMS"
+  },
+  {
+   "fieldname": "inbound",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Inbound",
+   "options": "Bill Inbound WMS"
+  },
+  {
+   "fieldname": "customer_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer ID",
+   "options": "Customer WMS"
+  },
+  {
+   "fieldname": "billdate",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Billdate"
+  },
+  {
+   "fieldname": "discrepancy_noted",
+   "fieldtype": "Column Break",
+   "label": "Discrepancy Noted"
+  },
+  {
+   "default": "0",
+   "fieldname": "no",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "No"
+  },
+  {
+   "default": "0",
+   "fieldname": "yes",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Yes"
+  },
+  {
+   "fieldname": "lot_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Lot No"
+  },
+  {
+   "fieldname": "date_in",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date In"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "inbound_products",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Inbound Products"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Status"
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "product",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Product"
+  },
+  {
+   "fieldname": "pallets",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Pallets"
+  },
+  {
+   "fieldname": "per_pallet",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Per Pallet"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "p_ratio",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "P. Ratio"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "delete_selected_row",
+   "fieldtype": "Button",
+   "label": "Delete Selected row"
+  },
+  {
+   "fieldname": "select_product_from_inbound_to_add_to_taily_sheet",
+   "fieldtype": "Button",
+   "label": "Select Product From Inbound to add to Taily Sheet"
+  },
+  {
+   "fieldname": "shared",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Shared"
+  },
+  {
+   "fieldname": "taily_sheet",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Taily Sheet"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-02-17 17:31:11.611430",
+ "modified_by": "Administrator",
+ "module": "Warehouse Management System",
+ "name": "PhysIcal Taily Sheet WMS",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

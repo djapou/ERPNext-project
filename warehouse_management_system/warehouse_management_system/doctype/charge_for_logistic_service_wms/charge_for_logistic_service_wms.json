@@ -1,0 +1,148 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "CFLS-.#####",
+ "creation": "2022-02-17 14:51:16.614786",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "zone",
+  "fp_zone",
+  "inbound",
+  "customer_id",
+  "traffic_officer",
+  "date",
+  "remarks",
+  "column_break_8",
+  "credit",
+  "revision",
+  "invoice_no",
+  "request_no",
+  "total",
+  "vat_15",
+  "amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "zone",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Zone",
+   "options": "Zone WMS"
+  },
+  {
+   "fetch_from": "zone.zone_code",
+   "fieldname": "fp_zone",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "FP Zone",
+   "options": "Zone WMS"
+  },
+  {
+   "fieldname": "inbound",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Inbound",
+   "options": "Bill Inbound WMS"
+  },
+  {
+   "fieldname": "customer_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer ID",
+   "options": "Customer WMS"
+  },
+  {
+   "fieldname": "traffic_officer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Traffic Officer",
+   "options": "Traffic Officer WMS"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "credit",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Credit"
+  },
+  {
+   "fieldname": "revision",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Revision"
+  },
+  {
+   "fieldname": "invoice_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Invoice No"
+  },
+  {
+   "fieldname": "request_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Request No"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total"
+  },
+  {
+   "fieldname": "vat_15",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Vat 15%"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Amount"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-02-17 14:51:16.614786",
+ "modified_by": "Administrator",
+ "module": "Warehouse Management System",
+ "name": "Charge For Logistic Service WMS",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

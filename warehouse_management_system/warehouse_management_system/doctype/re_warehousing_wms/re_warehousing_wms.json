@@ -1,0 +1,124 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "Re-WH-.#####",
+ "creation": "2022-02-17 13:02:53.661535",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "inbound",
+  "old_inbound",
+  "actual_date_in",
+  "customer",
+  "regime",
+  "old_cpc_code",
+  "new_inbound",
+  "column_break_9",
+  "new_cpc_code",
+  "date",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "inbound",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Inbound",
+   "options": "Bill Inbound WMS"
+  },
+  {
+   "fetch_from": "inbound.bill_inbound",
+   "fieldname": "old_inbound",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "old Inbound",
+   "options": "Bill Inbound WMS"
+  },
+  {
+   "fieldname": "actual_date_in",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Actual Date iN"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer WMS"
+  },
+  {
+   "fieldname": "regime",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Regime",
+   "options": "Regime WMS"
+  },
+  {
+   "fetch_from": "regime.cpc_code",
+   "fieldname": "old_cpc_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "old CPC Code",
+   "options": "Regime WMS"
+  },
+  {
+   "fieldname": "new_inbound",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "New Inbound",
+   "options": "Bill Inbound WMS"
+  },
+  {
+   "fetch_from": "regime.cpc_code",
+   "fieldname": "new_cpc_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "New CPC Code",
+   "options": "Regime WMS"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-02-17 13:06:33.616354",
+ "modified_by": "Administrator",
+ "module": "Warehouse Management System",
+ "name": "Re Warehousing WMS",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

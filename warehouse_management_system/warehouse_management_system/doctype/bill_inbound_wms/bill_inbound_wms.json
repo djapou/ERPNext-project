@@ -127,7 +127,7 @@
   },
   {
    "fieldname": "remarks",
-   "fieldtype": "Text",
+   "fieldtype": "Small Text",
    "in_list_view": 1,
    "label": "Remarks"
   },
@@ -253,7 +253,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-16 17:38:13.617311",
+ "modified": "2022-02-17 11:46:34.883194",
  "modified_by": "Administrator",
  "module": "Warehouse Management System",
  "name": "Bill Inbound WMS",

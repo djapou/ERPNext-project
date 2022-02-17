@@ -1,0 +1,250 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:outbound",
+ "creation": "2022-02-17 11:18:14.796053",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "bill_details",
+  "outbound",
+  "customer_id",
+  "traffic_officer",
+  "country",
+  "warrant_no",
+  "transport",
+  "truck_no",
+  "column_break_9",
+  "date",
+  "regime",
+  "cpc_code",
+  "fp_zone",
+  "no_of_items",
+  "containers",
+  "container_numbers",
+  "inbound",
+  "section_break_17",
+  "remarks",
+  "item_details",
+  "select_product",
+  "prod_code",
+  "original",
+  "quantity",
+  "column_break_25",
+  "balance",
+  "deliver_now",
+  "unit",
+  "section_break_29",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "bill_details",
+   "fieldtype": "Tab Break",
+   "label": "Bill Details"
+  },
+  {
+   "fieldname": "outbound",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Outbound",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "customer_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer ID",
+   "options": "Customer WMS"
+  },
+  {
+   "fieldname": "traffic_officer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Traffic Officer",
+   "options": "Traffic Officer WMS"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Country",
+   "options": "Country WMS"
+  },
+  {
+   "fieldname": "warrant_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Warrant No"
+  },
+  {
+   "fieldname": "transport",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Transport"
+  },
+  {
+   "fieldname": "truck_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Truck No"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date"
+  },
+  {
+   "fieldname": "regime",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Regime",
+   "options": "Regime WMS"
+  },
+  {
+   "fetch_from": "regime.cpc_code",
+   "fieldname": "cpc_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "CPC Code",
+   "options": "Regime WMS"
+  },
+  {
+   "fieldname": "fp_zone",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "FP Zone",
+   "options": "Zone WMS"
+  },
+  {
+   "fieldname": "no_of_items",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "No Of Items "
+  },
+  {
+   "fieldname": "containers",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Containers"
+  },
+  {
+   "fieldname": "container_numbers",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Container Numbers"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "inbound",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Inbounds"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "item_details",
+   "fieldtype": "Tab Break",
+   "label": "Item Details"
+  },
+  {
+   "fieldname": "select_product",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Select Product",
+   "options": "Product WMS"
+  },
+  {
+   "fetch_from": "select_product.product_code",
+   "fieldname": "prod_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Prod Code",
+   "options": "Product WMS"
+  },
+  {
+   "fieldname": "original",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Original"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "column_break_25",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "balance",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Balance"
+  },
+  {
+   "fieldname": "deliver_now",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Deliver Now"
+  },
+  {
+   "fieldname": "unit",
+   "fieldtype": "Link",
+   "label": "Unit",
+   "options": "Unit WMS"
+  },
+  {
+   "fieldname": "section_break_29",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-02-17 11:26:56.289971",
+ "modified_by": "Administrator",
+ "module": "Warehouse Management System",
+ "name": "Bill Outbound WMS",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

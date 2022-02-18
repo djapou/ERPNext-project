@@ -1,0 +1,55 @@
+{
+ "charts": [],
+ "content": "[]",
+ "creation": "2021-12-02 09:53:15.947479",
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "hide_custom": 0,
+ "icon": "share-people",
+ "idx": 0,
+ "label": "Warehouse Management System",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Process And Master",
+   "link_count": 0,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Customer WMS",
+   "link_count": 0,
+   "link_to": "Customer WMS",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2022-02-17 21:57:59.381544",
+ "modified_by": "Administrator",
+ "module": "Warehouse Management System",
+ "name": "Estate App",
+ "owner": "Administrator",
+ "public": 1,
+ "roles": [],
+ "sequence_id": 0,
+ "shortcuts": [
+  {
+   "doc_view": "List",
+   "label": "Customer",
+   "link_to": "Customer WMS",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "Traffic Officer",
+   "link_to": "Traffic Officer WMS",
+   "type": "DocType"
+  }
+ ],
+ "title": "Warehouse Management System"
+}

@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "field:product_code",
  "creation": "2022-02-15 17:51:21.447168",
@@ -9,17 +10,19 @@
  "field_order": [
   "product_code",
   "hs_code",
-  "unit",
-  "expiry_date",
   "description",
   "column_break_3",
+  "unit",
+  "expiry_date",
   "remarks"
  ],
  "fields": [
   {
    "fieldname": "product_code",
    "fieldtype": "Data",
+   "in_global_search": 1,
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Product Code",
    "reqd": 1,
    "unique": 1
@@ -42,20 +45,18 @@
   },
   {
    "fieldname": "description",
-   "fieldtype": "Data",
+   "fieldtype": "Small Text",
    "in_list_view": 1,
    "label": "Description"
   },
   {
    "fieldname": "expiry_date",
    "fieldtype": "Date",
-   "in_list_view": 1,
    "label": "Expiry Date"
   },
   {
    "fieldname": "remarks",
-   "fieldtype": "Text",
-   "in_list_view": 1,
+   "fieldtype": "Small Text",
    "label": "Remarks"
   },
   {
@@ -65,7 +66,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-16 12:11:26.516061",
+ "modified": "2022-02-20 01:16:35.702723",
  "modified_by": "Administrator",
  "module": "Warehouse Management System",
  "name": "Product WMS",
@@ -83,10 +84,23 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1,
+   "write": 1
   }
  ],
  "quick_entry": 1,
- "sort_field": "modified",
+ "show_name_in_global_search": 1,
+ "sort_field": "product_code",
  "sort_order": "DESC",
  "track_changes": 1
 }

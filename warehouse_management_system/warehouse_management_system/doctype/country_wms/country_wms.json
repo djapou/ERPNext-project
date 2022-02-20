@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "field:country_name",
  "creation": "2022-02-15 13:49:50.595441",
@@ -15,27 +16,30 @@
   {
    "fieldname": "country_code",
    "fieldtype": "Data",
-   "in_list_view": 1,
    "label": "Country Code",
    "unique": 1
   },
   {
    "fieldname": "country_name",
    "fieldtype": "Data",
+   "in_global_search": 1,
    "in_list_view": 1,
-   "label": "Name",
+   "in_standard_filter": 1,
+   "label": "Country Name",
+   "reqd": 1,
    "unique": 1
   },
   {
    "fieldname": "currency",
    "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Currency"
+   "label": "Currency",
+   "unique": 1
   }
  ],
+ "icon": "fa fa-globe",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-15 16:42:47.708245",
+ "modified": "2022-02-20 01:19:58.905426",
  "modified_by": "Administrator",
  "module": "Warehouse Management System",
  "name": "Country WMS",
@@ -53,10 +57,23 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1,
+   "write": 1
   }
  ],
  "quick_entry": 1,
- "sort_field": "modified",
+ "show_name_in_global_search": 1,
+ "sort_field": "country_name",
  "sort_order": "DESC",
  "track_changes": 1
 }

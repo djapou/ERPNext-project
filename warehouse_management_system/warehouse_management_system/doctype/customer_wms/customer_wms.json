@@ -1,7 +1,8 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
- "autoname": "CUST-.#####",
+ "autoname": "field:customer_name",
  "creation": "2022-02-15 21:45:48.520591",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -42,8 +43,8 @@
   {
    "fieldname": "customer_id",
    "fieldtype": "Data",
+   "in_global_search": 1,
    "in_list_view": 1,
-   "in_preview": 1,
    "in_standard_filter": 1,
    "label": "Customer ID",
    "reqd": 1,
@@ -54,12 +55,15 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Category",
-   "options": "\nInterne\nEtranger"
+   "options": "Select..."
   },
   {
    "fieldname": "customer_name",
    "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_standard_filter": 1,
    "label": "Name",
+   "reqd": 1,
    "unique": 1
   },
   {
@@ -82,13 +86,13 @@
   },
   {
    "fieldname": "phone",
-   "fieldtype": "Int",
+   "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Phone"
   },
   {
    "fieldname": "fax",
-   "fieldtype": "Int",
+   "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Fax"
   },
@@ -133,17 +137,17 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Status",
-   "options": "\nEnable\nDisable"
+   "options": "Select..."
   },
   {
    "fieldname": "vat_no",
-   "fieldtype": "Int",
+   "fieldtype": "Float",
    "in_list_view": 1,
    "label": "VAT No"
   },
   {
    "fieldname": "freeport_cert_no",
-   "fieldtype": "Int",
+   "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Freeport Cert No"
   },
@@ -167,7 +171,7 @@
   },
   {
    "fieldname": "total_area_leased",
-   "fieldtype": "Int",
+   "fieldtype": "Float",
    "in_list_view": 1,
    "label": "Total Area Leased"
   },
@@ -216,6 +220,7 @@
    "label": "Zone 3"
   },
   {
+   "collapsible": 1,
    "fieldname": "section_break_29",
    "fieldtype": "Section Break"
   },
@@ -226,11 +231,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-17 17:38:55.964545",
+ "modified": "2022-02-20 01:04:49.250615",
  "modified_by": "Administrator",
  "module": "Warehouse Management System",
  "name": "Customer WMS",
- "naming_rule": "Expression (old style)",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -244,10 +249,22 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1,
+   "write": 1
   }
  ],
  "quick_entry": 1,
- "sort_field": "modified",
+ "sort_field": "customer_name",
  "sort_order": "DESC",
  "track_changes": 1
 }

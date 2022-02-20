@@ -1,7 +1,8 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
- "autoname": "TRAFF_OFF-.#####",
+ "autoname": "field:traffic_officer_name",
  "creation": "2022-02-15 17:00:01.618988",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -11,23 +12,24 @@
  ],
  "fields": [
   {
+   "fetch_from": "user.first_name",
    "fieldname": "traffic_officer_name",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
+   "in_global_search": 1,
    "in_list_view": 1,
-   "in_preview": 1,
    "in_standard_filter": 1,
    "label": "Traffic Officer Name",
-   "reqd": 1,
+   "options": "User",
    "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-16 11:34:25.772031",
+ "modified": "2022-02-20 01:12:12.985576",
  "modified_by": "Administrator",
  "module": "Warehouse Management System",
  "name": "Traffic Officer WMS",
- "naming_rule": "Expression (old style)",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -41,10 +43,23 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1,
+   "write": 1
   }
  ],
  "quick_entry": 1,
- "sort_field": "modified",
+ "show_name_in_global_search": 1,
+ "sort_field": "traffic_officer_name",
  "sort_order": "DESC",
  "track_changes": 1
 }

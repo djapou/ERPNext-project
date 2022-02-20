@@ -60,9 +60,8 @@
   {
    "fieldname": "customer_name",
    "fieldtype": "Data",
-   "in_global_search": 1,
    "in_standard_filter": 1,
-   "label": "Name",
+   "label": "Customer Name",
    "reqd": 1,
    "unique": 1
   },
@@ -231,7 +230,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-20 01:04:49.250615",
+ "modified": "2022-02-20 15:19:12.450139",
  "modified_by": "Administrator",
  "module": "Warehouse Management System",
  "name": "Customer WMS",
@@ -264,6 +263,7 @@
   }
  ],
  "quick_entry": 1,
+ "show_name_in_global_search": 1,
  "sort_field": "customer_name",
  "sort_order": "DESC",
  "track_changes": 1

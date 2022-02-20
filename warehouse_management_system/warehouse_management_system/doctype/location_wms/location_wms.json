@@ -60,7 +60,7 @@
   },
   {
    "fieldname": "max_pallet_ratio",
-   "fieldtype": "Int",
+   "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Max Pallet Ratio"
   },
@@ -98,7 +98,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-20 01:09:47.965275",
+ "modified": "2022-02-20 15:30:41.577599",
  "modified_by": "Administrator",
  "module": "Warehouse Management System",
  "name": "Location WMS",

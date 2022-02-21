@@ -1,7 +1,8 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
- "autoname": "CFLS-.#####",
+ "autoname": "field:request_no",
  "creation": "2022-02-17 14:51:16.614786",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -13,12 +14,16 @@
   "customer_id",
   "traffic_officer",
   "date",
-  "remarks",
   "column_break_8",
   "credit",
   "revision",
   "invoice_no",
   "request_no",
+  "section_break_12",
+  "charge_marketing",
+  "section_break_14",
+  "remarks",
+  "column_break_16",
   "total",
   "vat_15",
   "amount"
@@ -98,7 +103,8 @@
    "fieldname": "request_no",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Request No"
+   "label": "Request No",
+   "unique": 1
   },
   {
    "fieldname": "total",
@@ -117,15 +123,33 @@
    "fieldtype": "Float",
    "in_list_view": 1,
    "label": "Amount"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "charge_marketing",
+   "fieldtype": "Table",
+   "label": "Charge Marketing",
+   "options": "Charge Marketing WMS"
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-17 14:51:16.614786",
+ "modified": "2022-02-20 23:14:20.509843",
  "modified_by": "Administrator",
  "module": "Warehouse Management System",
  "name": "Charge For Logistic Service WMS",
- "naming_rule": "Expression (old style)",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -137,6 +161,18 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
    "share": 1,
    "write": 1
   }

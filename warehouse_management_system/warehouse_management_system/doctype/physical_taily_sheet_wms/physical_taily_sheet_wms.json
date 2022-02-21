@@ -1,7 +1,8 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
- "autoname": "PTS-.#####",
+ "autoname": "field:product",
  "creation": "2022-02-17 17:04:58.679898",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -9,7 +10,7 @@
  "field_order": [
   "fp_zone",
   "inbound",
-  "customer_id",
+  "customer",
   "billdate",
   "discrepancy_noted",
   "no",
@@ -17,15 +18,15 @@
   "lot_no",
   "date_in",
   "section_break_11",
-  "inbound_products",
+  "inbound_product",
   "column_break_13",
   "status",
   "section_break_15",
   "delete_selected_row",
   "taily_sheet",
-  "product",
   "column_break_21",
   "select_product_from_inbound_to_add_to_taily_sheet",
+  "product",
   "quantity",
   "pallets",
   "per_pallet",
@@ -38,7 +39,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "FP Zone",
-   "options": "Zone WMS"
+   "options": "Warehouse WMS"
   },
   {
    "fieldname": "inbound",
@@ -46,13 +47,6 @@
    "in_list_view": 1,
    "label": "Inbound",
    "options": "Bill Inbound WMS"
-  },
-  {
-   "fieldname": "customer_id",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "label": "Customer ID",
-   "options": "Customer WMS"
   },
   {
    "fieldname": "billdate",
@@ -81,25 +75,19 @@
   },
   {
    "fieldname": "lot_no",
-   "fieldtype": "Data",
+   "fieldtype": "Int",
    "in_list_view": 1,
    "label": "Lot No"
   },
   {
    "fieldname": "date_in",
-   "fieldtype": "Date",
+   "fieldtype": "Datetime",
    "in_list_view": 1,
    "label": "Date In"
   },
   {
    "fieldname": "section_break_11",
    "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "inbound_products",
-   "fieldtype": "Small Text",
-   "in_list_view": 1,
-   "label": "Inbound Products"
   },
   {
    "fieldname": "column_break_13",
@@ -117,9 +105,12 @@
   },
   {
    "fieldname": "product",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Product"
+   "in_standard_filter": 1,
+   "label": "Product",
+   "options": "Product WMS",
+   "unique": 1
   },
   {
    "fieldname": "pallets",
@@ -170,15 +161,28 @@
    "fieldtype": "Small Text",
    "in_list_view": 1,
    "label": "Taily Sheet"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer WMS"
+  },
+  {
+   "fieldname": "inbound_product",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Inbound Products"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-17 17:31:11.611430",
+ "modified": "2022-02-21 00:21:35.898040",
  "modified_by": "Administrator",
  "module": "Warehouse Management System",
  "name": "PhysIcal Taily Sheet WMS",
- "naming_rule": "Expression (old style)",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -190,6 +194,18 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
    "share": 1,
    "write": 1
   }

@@ -1,7 +1,8 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
- "autoname": "RC-.####",
+ "autoname": "field:fp_zone",
  "creation": "2022-02-17 21:22:44.064020",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -13,7 +14,9 @@
   "column_break_6",
   "traffic_officer",
   "date_out",
-  "release_container"
+  "release_container",
+  "section_break_8",
+  "release"
  ],
  "fields": [
   {
@@ -21,7 +24,8 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "FP Zone",
-   "options": "Zone WMS"
+   "options": "Warehouse WMS",
+   "unique": 1
   },
   {
    "fetch_from": "customer.customer_id",
@@ -34,7 +38,6 @@
   {
    "fieldname": "outbound",
    "fieldtype": "Link",
-   "in_list_view": 1,
    "label": "Outbound",
    "options": "Bill Outbound WMS"
   },
@@ -53,23 +56,32 @@
    "default": "0",
    "fieldname": "release_container",
    "fieldtype": "Check",
-   "in_list_view": 1,
-   "label": "Released Container"
+   "label": "Release Container"
   },
   {
    "fieldname": "date_out",
    "fieldtype": "Date",
    "in_list_view": 1,
    "label": "Date Out"
+  },
+  {
+   "fieldname": "release",
+   "fieldtype": "Table",
+   "label": "Release",
+   "options": "Container WMS"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-17 21:31:33.867435",
+ "modified": "2022-02-20 22:21:30.527622",
  "modified_by": "Administrator",
  "module": "Warehouse Management System",
  "name": "Release Container WMS",
- "naming_rule": "Expression (old style)",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -81,6 +93,18 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
    "share": 1,
    "write": 1
   }

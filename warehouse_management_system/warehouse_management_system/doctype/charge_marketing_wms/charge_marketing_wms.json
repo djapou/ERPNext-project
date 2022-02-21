@@ -1,0 +1,82 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:ch_code",
+ "creation": "2022-02-20 23:07:06.488205",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "ch_code",
+  "description",
+  "timein",
+  "timeout",
+  "hrs",
+  "quantity",
+  "unit",
+  "rate",
+  "amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "ch_code",
+   "fieldtype": "Data",
+   "label": "Ch Code",
+   "unique": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "timein",
+   "fieldtype": "Datetime",
+   "label": "TimeIn"
+  },
+  {
+   "fieldname": "timeout",
+   "fieldtype": "Data",
+   "label": "TimeOut"
+  },
+  {
+   "fieldname": "hrs",
+   "fieldtype": "Time",
+   "label": "Hrs"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Int",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "unit",
+   "fieldtype": "Select",
+   "label": "Unit",
+   "options": "Select...\nHours\nFlat fee\nPer hour"
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Int",
+   "label": "Rate"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Float",
+   "label": "Amount"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-02-20 23:07:06.488205",
+ "modified_by": "Administrator",
+ "module": "Warehouse Management System",
+ "name": "Charge Marketing WMS",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [],
+ "show_name_in_global_search": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

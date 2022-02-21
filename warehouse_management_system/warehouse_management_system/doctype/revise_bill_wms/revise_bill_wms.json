@@ -1,7 +1,8 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
- "autoname": "field:inbound",
+ "autoname": "field:revision",
  "creation": "2022-02-17 12:23:43.993187",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -41,7 +42,8 @@
    "fieldname": "revision",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Revision"
+   "label": "Revision",
+   "unique": 1
   },
   {
    "fieldname": "revision_date",
@@ -56,7 +58,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-17 12:28:27.340245",
+ "modified": "2022-02-20 23:20:56.891418",
  "modified_by": "Administrator",
  "module": "Warehouse Management System",
  "name": "Revise Bill WMS",
@@ -72,6 +74,18 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
    "share": 1,
    "write": 1
   }

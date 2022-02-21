@@ -130,9 +130,9 @@
    "is_query_report": 0,
    "label": "Bill Inbound",
    "link_count": 0,
-   "link_to": "Bill Inbound WMS",
+   "link_to": "Bill Inbound",
    "link_type": "DocType",
-   "onboard": 1,
+   "onboard": 0,
    "type": "Link"
   },
   {
@@ -142,7 +142,7 @@
    "link_count": 0,
    "link_to": "Bill Outbound WMS",
    "link_type": "DocType",
-   "onboard": 1,
+   "onboard": 0,
    "type": "Link"
   },
   {
@@ -152,7 +152,7 @@
    "link_count": 0,
    "link_to": "Re Warehousing WMS",
    "link_type": "DocType",
-   "onboard": 1,
+   "onboard": 0,
    "type": "Link"
   },
   {
@@ -162,7 +162,7 @@
    "link_count": 0,
    "link_to": "Revise Bill WMS",
    "link_type": "DocType",
-   "onboard": 1,
+   "onboard": 0,
    "type": "Link"
   },
   {
@@ -172,7 +172,7 @@
    "link_count": 0,
    "link_to": "PhysIcal Taily Sheet WMS",
    "link_type": "DocType",
-   "onboard": 1,
+   "onboard": 0,
    "type": "Link"
   },
   {
@@ -182,7 +182,7 @@
    "link_count": 0,
    "link_to": "Store Container WMS",
    "link_type": "DocType",
-   "onboard": 1,
+   "onboard": 0,
    "type": "Link"
   },
   {
@@ -192,7 +192,7 @@
    "link_count": 0,
    "link_to": "Release Container WMS",
    "link_type": "DocType",
-   "onboard": 1,
+   "onboard": 0,
    "type": "Link"
   },
   {
@@ -202,11 +202,11 @@
    "link_count": 0,
    "link_to": "Charge For Logistic Service WMS",
    "link_type": "DocType",
-   "onboard": 1,
+   "onboard": 0,
    "type": "Link"
   }
  ],
- "modified": "2022-02-18 09:36:53.503860",
+ "modified": "2022-02-21 01:26:27.494781",
  "modified_by": "Administrator",
  "module": "Warehouse Management System",
  "name": "Warehouse Management System",

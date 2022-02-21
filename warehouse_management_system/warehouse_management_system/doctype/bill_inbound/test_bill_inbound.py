@@ -4,5 +4,5 @@
 # import frappe
 import unittest
 
-class TestBillInboundWMS(unittest.TestCase):
+class TestBillInbound(unittest.TestCase):
 	pass

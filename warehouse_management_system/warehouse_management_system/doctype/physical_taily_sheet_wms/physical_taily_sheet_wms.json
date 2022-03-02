@@ -46,7 +46,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Inbound",
-   "options": "Bill Inbound WMS"
+   "options": "Bill Inboun"
   },
   {
    "fieldname": "billdate",
@@ -178,7 +178,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-21 00:21:35.898040",
+ "modified": "2022-02-21 13:02:26.122661",
  "modified_by": "Administrator",
  "module": "Warehouse Management System",
  "name": "PhysIcal Taily Sheet WMS",

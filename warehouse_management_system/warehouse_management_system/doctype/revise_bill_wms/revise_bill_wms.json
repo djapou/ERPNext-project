@@ -21,7 +21,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Inbound",
-   "options": "Bill Inbound WMS",
+   "options": "Bill Inboun",
    "reqd": 1,
    "unique": 1
   },
@@ -58,7 +58,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-20 23:20:56.891418",
+ "modified": "2022-02-21 12:57:24.250001",
  "modified_by": "Administrator",
  "module": "Warehouse Management System",
  "name": "Revise Bill WMS",

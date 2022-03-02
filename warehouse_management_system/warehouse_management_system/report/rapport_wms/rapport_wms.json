@@ -1,0 +1,37 @@
+{
+ "add_total_row": 0,
+ "columns": [
+  {
+   "fieldname": "activity",
+   "fieldtype": "Data",
+   "label": "Activity",
+   "width": 0
+  }
+ ],
+ "creation": "2022-02-21 12:50:22.848514",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letter_head": "Afrikedge",
+ "modified": "2022-02-21 12:53:50.792384",
+ "modified_by": "Administrator",
+ "module": "Warehouse Management System",
+ "name": "RAPPORT wms",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Activity WMS",
+ "report_name": "RAPPORT wms",
+ "report_type": "Custom Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "All"
+  }
+ ]
+}

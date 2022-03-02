@@ -8,7 +8,6 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "zone",
   "fp_zone",
   "inbound",
   "customer_id",
@@ -30,26 +29,19 @@
  ],
  "fields": [
   {
-   "fieldname": "zone",
-   "fieldtype": "Link",
-   "hidden": 1,
-   "label": "Zone",
-   "options": "Zone WMS"
-  },
-  {
    "fetch_from": "zone.zone_code",
    "fieldname": "fp_zone",
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "FP Zone",
-   "options": "Zone WMS"
+   "options": "Warehouse WMS"
   },
   {
    "fieldname": "inbound",
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Inbound",
-   "options": "Bill Inbound WMS"
+   "options": "Bill Inboun"
   },
   {
    "fieldname": "customer_id",
@@ -145,7 +137,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-20 23:14:20.509843",
+ "modified": "2022-02-21 12:59:40.719516",
  "modified_by": "Administrator",
  "module": "Warehouse Management System",
  "name": "Charge For Logistic Service WMS",

@@ -8,24 +8,31 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "traffic_officer_email",
   "traffic_officer_name"
  ],
  "fields": [
   {
-   "fetch_from": "user.first_name",
+   "fetch_from": "traffic_officer_email.full_name",
    "fieldname": "traffic_officer_name",
-   "fieldtype": "Link",
-   "in_global_search": 1,
+   "fieldtype": "Data",
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Traffic Officer Name",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "traffic_officer_email",
+   "fieldtype": "Link",
+   "label": "Traffic Officer Email",
    "options": "User",
    "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-20 01:12:12.985576",
+ "modified": "2022-03-02 15:23:28.166218",
  "modified_by": "Administrator",
  "module": "Warehouse Management System",
  "name": "Traffic Officer WMS",

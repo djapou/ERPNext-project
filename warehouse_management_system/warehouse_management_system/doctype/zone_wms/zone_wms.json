@@ -10,14 +10,15 @@
  "field_order": [
   "w_house_code",
   "zone_code",
-  "description",
   "customer_id",
-  "column_break_6",
-  "chargemonth",
   "start_date",
-  "end_date",
+  "description",
+  "column_break_6",
   "ok_to_bill",
-  "all_customers"
+  "all_customers",
+  "chargemonth",
+  "customer_name",
+  "end_date"
  ],
  "fields": [
   {
@@ -41,7 +42,7 @@
   },
   {
    "fieldname": "description",
-   "fieldtype": "Data",
+   "fieldtype": "Small Text",
    "in_list_view": 1,
    "label": "Description"
   },
@@ -54,7 +55,7 @@
   },
   {
    "fieldname": "chargemonth",
-   "fieldtype": "Duration",
+   "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Charge/Month"
   },
@@ -87,11 +88,17 @@
   {
    "fieldname": "column_break_6",
    "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "customer_id.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-20 01:08:08.028536",
+ "modified": "2022-03-02 15:51:39.661390",
  "modified_by": "Administrator",
  "module": "Warehouse Management System",
  "name": "Zone WMS",

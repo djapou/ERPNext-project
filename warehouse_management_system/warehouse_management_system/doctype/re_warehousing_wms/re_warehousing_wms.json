@@ -2,7 +2,7 @@
  "actions": [],
  "allow_import": 1,
  "allow_rename": 1,
- "autoname": "field:old_inbound",
+ "autoname": "field:new_inbound",
  "creation": "2022-02-17 13:02:53.661535",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -24,9 +24,9 @@
    "fieldname": "old_inbound",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "in_standard_filter": 1,
    "label": "old Inbound",
    "options": "Bill Inboun",
+   "reqd": 1,
    "unique": 1
   },
   {
@@ -47,24 +47,27 @@
    "fieldname": "old_cpc_code",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "in_standard_filter": 1,
    "label": "old CPC Code",
-   "options": "Regime WMS"
+   "options": "Regime WMS",
+   "reqd": 1
   },
   {
    "fieldname": "new_inbound",
-   "fieldtype": "Link",
+   "fieldtype": "Data",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "New Inbound",
-   "options": "Bill Inboun"
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fetch_from": "regime.cpc_code",
    "fieldname": "new_cpc_code",
-   "fieldtype": "Link",
+   "fieldtype": "Data",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "New CPC Code",
-   "options": "Regime WMS"
+   "reqd": 1
   },
   {
    "fieldname": "column_break_9",
@@ -85,7 +88,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-21 12:56:31.543268",
+ "modified": "2022-03-03 10:05:46.967624",
  "modified_by": "Administrator",
  "module": "Warehouse Management System",
  "name": "Re Warehousing WMS",
@@ -118,7 +121,7 @@
   }
  ],
  "quick_entry": 1,
- "sort_field": "old_inbound",
+ "sort_field": "new_inbound",
  "sort_order": "DESC",
  "track_changes": 1
 }

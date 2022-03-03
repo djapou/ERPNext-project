@@ -7,7 +7,7 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "release",
+  "released",
   "container_no",
   "type",
   "description",
@@ -31,12 +31,6 @@
    "in_standard_filter": 1,
    "label": "Container No",
    "unique": 1
-  },
-  {
-   "default": "0",
-   "fieldname": "release",
-   "fieldtype": "Check",
-   "label": "Release"
   },
   {
    "fieldname": "description",
@@ -65,12 +59,18 @@
    "fieldname": "date_out",
    "fieldtype": "Date",
    "label": "Date out"
+  },
+  {
+   "default": "0",
+   "fieldname": "released",
+   "fieldtype": "Check",
+   "label": "Released"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2022-02-20 22:54:50.601415",
+ "modified": "2022-03-03 13:04:33.413834",
  "modified_by": "Administrator",
  "module": "Warehouse Management System",
  "name": "Container WMS",

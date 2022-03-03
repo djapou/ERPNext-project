@@ -1,8 +1,7 @@
 {
  "actions": [],
- "allow_import": 1,
  "allow_rename": 1,
- "autoname": "field:fp_zone",
+ "autoname": "RC-#####",
  "creation": "2022-02-17 21:22:44.064020",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -13,10 +12,11 @@
   "outbound",
   "column_break_6",
   "traffic_officer",
+  "customer_name",
   "date_out",
-  "release_container",
+  "released_container",
   "section_break_8",
-  "release"
+  "released"
  ],
  "fields": [
   {
@@ -53,35 +53,41 @@
    "fieldtype": "Column Break"
   },
   {
-   "default": "0",
-   "fieldname": "release_container",
-   "fieldtype": "Check",
-   "label": "Release Container"
-  },
-  {
    "fieldname": "date_out",
    "fieldtype": "Date",
    "in_list_view": 1,
    "label": "Date Out"
   },
   {
-   "fieldname": "release",
-   "fieldtype": "Table",
-   "label": "Release",
-   "options": "Container WMS"
-  },
-  {
    "fieldname": "section_break_8",
    "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "customer_id.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "default": "0",
+   "fieldname": "released_container",
+   "fieldtype": "Check",
+   "label": "Released Container"
+  },
+  {
+   "fieldname": "released",
+   "fieldtype": "Table",
+   "label": "Released",
+   "options": "Container WMS"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-20 22:21:30.527622",
+ "modified": "2022-03-03 13:22:07.006569",
  "modified_by": "Administrator",
  "module": "Warehouse Management System",
  "name": "Release Container WMS",
- "naming_rule": "By fieldname",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {

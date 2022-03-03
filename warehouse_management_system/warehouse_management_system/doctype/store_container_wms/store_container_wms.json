@@ -2,47 +2,36 @@
  "actions": [],
  "allow_import": 1,
  "allow_rename": 1,
- "autoname": "field:fp_zone",
+ "autoname": "field:boe_no",
  "creation": "2022-02-17 13:57:06.222362",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "zone",
   "fp_zone",
-  "customer",
-  "column_break_5",
-  "traffic_officer",
   "date",
-  "container_details",
+  "customer",
+  "traffic_officer",
+  "column_break_5",
   "boe_no",
   "revision",
+  "customer_name",
   "paid_upto",
-  "column_break_11",
+  "container_details",
   "description",
   "container_date",
+  "column_break_11",
   "number",
-  "column_break_12",
-  "rate",
-  "section_break_17",
-  "container"
+  "rate"
  ],
  "fields": [
-  {
-   "fieldname": "zone",
-   "fieldtype": "Link",
-   "hidden": 1,
-   "label": "Zone",
-   "options": "Warehouse WMS"
-  },
   {
    "fetch_from": "zone.zone_code",
    "fieldname": "fp_zone",
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "FP Zone",
-   "options": "Warehouse WMS",
-   "unique": 1
+   "options": "Warehouse WMS"
   },
   {
    "fieldname": "date",
@@ -78,13 +67,16 @@
    "fieldname": "boe_no",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Boe No"
+   "in_standard_filter": 1,
+   "label": "Boe No",
+   "unique": 1
   },
   {
    "fieldname": "revision",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Revision"
+   "label": "Revision",
+   "options": "Revise Bill WMS"
   },
   {
    "fieldname": "paid_upto",
@@ -120,27 +112,19 @@
    "options": "Select...\nStorage of 20 ft Container - Empty/Full (tenant)\nStorage of 40 ft Container - Empty/Full (tenant)"
   },
   {
-   "fieldname": "column_break_12",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "column_break_11",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "section_break_17",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "container",
-   "fieldtype": "Table",
-   "label": "Container",
-   "options": "Container WMS"
+   "fetch_from": "customer.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-20 22:54:05.069452",
+ "modified": "2022-03-03 11:37:05.793429",
  "modified_by": "Administrator",
  "module": "Warehouse Management System",
  "name": "Store Container WMS",

@@ -1,6 +1,5 @@
 {
  "actions": [],
- "allow_import": 1,
  "allow_rename": 1,
  "autoname": "field:request_no",
  "creation": "2022-02-17 14:51:16.614786",
@@ -14,12 +13,13 @@
   "traffic_officer",
   "date",
   "column_break_8",
-  "credit",
-  "revision",
   "invoice_no",
+  "revision",
+  "customer_name",
   "request_no",
+  "credit",
   "section_break_12",
-  "charge_marketing",
+  "logistic_service_charges",
   "section_break_14",
   "remarks",
   "column_break_16",
@@ -74,16 +74,18 @@
    "fieldtype": "Column Break"
   },
   {
+   "default": "0",
    "fieldname": "credit",
-   "fieldtype": "Select",
+   "fieldtype": "Check",
    "in_list_view": 1,
    "label": "Credit"
   },
   {
    "fieldname": "revision",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Revision"
+   "label": "Revision",
+   "options": "Revise Bill WMS"
   },
   {
    "fieldname": "invoice_no",
@@ -95,6 +97,7 @@
    "fieldname": "request_no",
    "fieldtype": "Data",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Request No",
    "unique": 1
   },
@@ -106,7 +109,7 @@
   },
   {
    "fieldname": "vat_15",
-   "fieldtype": "Percent",
+   "fieldtype": "Float",
    "in_list_view": 1,
    "label": "Vat 15%"
   },
@@ -121,23 +124,29 @@
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "charge_marketing",
-   "fieldtype": "Table",
-   "label": "Charge Marketing",
-   "options": "Charge Marketing WMS"
-  },
-  {
    "fieldname": "section_break_14",
    "fieldtype": "Section Break"
   },
   {
    "fieldname": "column_break_16",
    "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "customer_id.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "logistic_service_charges",
+   "fieldtype": "Table",
+   "label": "Logistic Service Charges",
+   "options": "Charge Marketing WMS"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-21 12:59:40.719516",
+ "modified": "2022-03-03 14:23:21.402738",
  "modified_by": "Administrator",
  "module": "Warehouse Management System",
  "name": "Charge For Logistic Service WMS",

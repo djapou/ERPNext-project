@@ -8,15 +8,16 @@
  "engine": "InnoDB",
  "field_order": [
   "inbound_details",
-  "fp_zone",
   "bill_inbound",
   "customer_id",
+  "fp_zone",
   "traffic_officer",
   "cpc_code",
-  "column_break_7",
   "date",
   "truck_no",
+  "column_break_7",
   "no_of_items",
+  "customer_name",
   "containers",
   "containers_numbers",
   "section_break_13",
@@ -227,11 +228,17 @@
    "fieldname": "prod_description",
    "fieldtype": "Small Text",
    "label": "Prod Description"
+  },
+  {
+   "fetch_from": "customer_id.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-21 01:18:35.146124",
+ "modified": "2022-03-03 16:18:01.346682",
  "modified_by": "Administrator",
  "module": "Warehouse Management System",
  "name": "Bill Inbound",

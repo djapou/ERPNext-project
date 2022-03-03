@@ -34,7 +34,7 @@
   "fob",
   "origin",
   "hs_description",
-  "achat_product_details",
+  "actual_product_details",
   "prod_code",
   "prod_quantity",
   "unit_code",
@@ -140,10 +140,10 @@
    "label": "Item No"
   },
   {
+   "fetch_from": "prod_code.hs_code",
    "fieldname": "hs_code",
-   "fieldtype": "Link",
-   "label": "HS Code",
-   "options": "Product WMS"
+   "fieldtype": "Data",
+   "label": "HS Code"
   },
   {
    "fieldname": "hs_quantity",
@@ -187,12 +187,6 @@
    "label": "HS Description"
   },
   {
-   "collapsible": 1,
-   "fieldname": "achat_product_details",
-   "fieldtype": "Section Break",
-   "label": "Achat Product Details"
-  },
-  {
    "fieldname": "prod_code",
    "fieldtype": "Link",
    "label": "Prod Code",
@@ -234,11 +228,17 @@
    "fieldname": "customer_name",
    "fieldtype": "Data",
    "label": "Customer Name"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "actual_product_details",
+   "fieldtype": "Section Break",
+   "label": "Actual Product Details"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-03-03 16:18:01.346682",
+ "modified": "2022-03-03 21:26:13.365953",
  "modified_by": "Administrator",
  "module": "Warehouse Management System",
  "name": "Bill Inbound",

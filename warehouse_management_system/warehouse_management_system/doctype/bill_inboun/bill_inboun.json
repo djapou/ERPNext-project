@@ -8,15 +8,16 @@
  "engine": "InnoDB",
  "field_order": [
   "inbound_details",
-  "fp_zone",
   "bill_inbound",
   "customer_id",
+  "fp_zone",
   "traffic_officer",
   "cpc_code",
-  "column_break_7",
   "date",
   "truck_no",
+  "column_break_7",
   "no_of_items",
+  "customer_name",
   "containers",
   "containers_numbers",
   "section_break_13",
@@ -33,7 +34,7 @@
   "fob",
   "origin",
   "hs_description",
-  "achat_product_details",
+  "actual_product_details",
   "prod_code",
   "prod_quantity",
   "unit_code",
@@ -139,10 +140,10 @@
    "label": "Item No"
   },
   {
+   "fetch_from": "prod_code.hs_code",
    "fieldname": "hs_code",
-   "fieldtype": "Link",
-   "label": "HS Code",
-   "options": "Product WMS"
+   "fieldtype": "Data",
+   "label": "HS Code"
   },
   {
    "fieldname": "hs_quantity",
@@ -186,12 +187,6 @@
    "label": "HS Description"
   },
   {
-   "collapsible": 1,
-   "fieldname": "achat_product_details",
-   "fieldtype": "Section Break",
-   "label": "Achat Product Details"
-  },
-  {
    "fieldname": "prod_code",
    "fieldtype": "Link",
    "label": "Prod Code",
@@ -227,12 +222,24 @@
    "fieldname": "prod_description",
    "fieldtype": "Small Text",
    "label": "Prod Description"
+  },
+  {
+   "fetch_from": "customer_id.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "actual_product_details",
+   "fieldtype": "Section Break",
+   "label": "Actual Product Details"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2022-02-21 01:24:54.786728",
+ "modified": "2022-03-03 23:12:20.617259",
  "modified_by": "Administrator",
  "module": "Warehouse Management System",
  "name": "Bill Inboun",

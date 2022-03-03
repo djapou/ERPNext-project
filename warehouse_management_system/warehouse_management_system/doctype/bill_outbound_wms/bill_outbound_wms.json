@@ -11,32 +11,33 @@
   "outbound",
   "customer_id",
   "traffic_officer",
+  "fp_zone",
+  "cpc_code",
   "country",
-  "warrant_no",
   "transport",
   "truck_no",
   "column_break_9",
   "date",
-  "regime",
-  "cpc_code",
-  "fp_zone",
+  "customer_name",
   "no_of_items",
   "containers",
   "container_numbers",
-  "inbound",
+  "section_break_16",
+  "inbounds",
   "section_break_17",
   "remarks",
   "item_details",
   "select_product",
+  "section_break_22",
   "prod_code",
-  "original",
   "quantity",
-  "column_break_25",
   "balance",
   "deliver_now",
+  "column_break_26",
   "unit",
-  "section_break_29",
-  "description"
+  "description",
+  "column_break_25",
+  "bill_outbound"
  ],
  "fields": [
   {
@@ -47,7 +48,9 @@
   {
    "fieldname": "outbound",
    "fieldtype": "Data",
+   "in_global_search": 1,
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Outbound",
    "reqd": 1,
    "unique": 1
@@ -74,12 +77,6 @@
    "options": "Country WMS"
   },
   {
-   "fieldname": "warrant_no",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Warrant No"
-  },
-  {
    "fieldname": "transport",
    "fieldtype": "Data",
    "in_list_view": 1,
@@ -102,13 +99,6 @@
    "label": "Date"
   },
   {
-   "fieldname": "regime",
-   "fieldtype": "Link",
-   "hidden": 1,
-   "label": "Regime",
-   "options": "Regime WMS"
-  },
-  {
    "fetch_from": "regime.cpc_code",
    "fieldname": "cpc_code",
    "fieldtype": "Link",
@@ -121,35 +111,29 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "FP Zone",
-   "options": "Zone WMS"
+   "options": "Warehouse WMS"
   },
   {
    "fieldname": "no_of_items",
-   "fieldtype": "Data",
+   "fieldtype": "Int",
    "in_list_view": 1,
    "label": "No Of Items "
   },
   {
    "fieldname": "containers",
-   "fieldtype": "Data",
+   "fieldtype": "Int",
    "in_list_view": 1,
    "label": "Containers"
   },
   {
    "fieldname": "container_numbers",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Container Numbers"
+   "fieldtype": "Table",
+   "label": "Container Numbers",
+   "options": "Container WMS"
   },
   {
    "fieldname": "section_break_17",
    "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "inbound",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Inbounds"
   },
   {
    "fieldname": "remarks",
@@ -164,10 +148,9 @@
   },
   {
    "fieldname": "select_product",
-   "fieldtype": "Link",
-   "in_list_view": 1,
+   "fieldtype": "Table",
    "label": "Select Product",
-   "options": "Product WMS"
+   "options": "Bill Inboun"
   },
   {
    "fetch_from": "select_product.product_code",
@@ -178,12 +161,6 @@
    "options": "Product WMS"
   },
   {
-   "fieldname": "original",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Original"
-  },
-  {
    "fieldname": "quantity",
    "fieldtype": "Int",
    "in_list_view": 1,
@@ -191,17 +168,17 @@
   },
   {
    "fieldname": "column_break_25",
-   "fieldtype": "Column Break"
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "balance",
-   "fieldtype": "Currency",
+   "fieldtype": "Int",
    "in_list_view": 1,
    "label": "Balance"
   },
   {
    "fieldname": "deliver_now",
-   "fieldtype": "Datetime",
+   "fieldtype": "Int",
    "in_list_view": 1,
    "label": "Deliver Now"
   },
@@ -212,18 +189,44 @@
    "options": "Unit WMS"
   },
   {
-   "fieldname": "section_break_29",
-   "fieldtype": "Section Break"
-  },
-  {
    "fieldname": "description",
    "fieldtype": "Small Text",
    "label": "Description"
+  },
+  {
+   "fetch_from": "customer_id.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "inbounds",
+   "fieldtype": "Table",
+   "label": "Inbounds",
+   "options": "Bill Inboun"
+  },
+  {
+   "fieldname": "section_break_22",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_26",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bill_outbound",
+   "fieldtype": "Table",
+   "label": "Bill Outbound",
+   "options": "Bill Inboun"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-17 11:26:56.289971",
+ "modified": "2022-03-03 23:05:16.056373",
  "modified_by": "Administrator",
  "module": "Warehouse Management System",
  "name": "Bill Outbound WMS",
@@ -241,10 +244,23 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1,
+   "write": 1
   }
  ],
  "quick_entry": 1,
- "sort_field": "modified",
+ "show_name_in_global_search": 1,
+ "sort_field": "outbound",
  "sort_order": "DESC",
  "track_changes": 1
 }
